@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Design</title>
+    <link rel="stylesheet" href="design%20cake.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- אייקונים וטקסט להתחברות -->
+        <div class="navigation_icons">
+            <a href="./homepage.html">
+                <img src="pic/home page.png" alt="home page" />
+            </a>
+            <a href="./user profile.html">
+                <img id="personal_account" src="pic/personal account.png" alt="personal account" />
+
+            </a>
+             <a id="login_link" href="./login.html">
+
+          <!--            טקסט LOGIN מתחת לאייקון אזור אישי-->
+                   <span id="profile_text">Login</span>
+               </a>
+
+        </div>
+
+        <!-- לוגו -->
+        <div class="Cake_Style_logo_container">
+            <div class="Cake_Style_logo_img">
+                <img id="logo_Cake" src="pic/cake icon.png" height="50" />
+                <div class="Cake_Style_logo_Text">
+                    <h1>
+                        CakeStyle
+                    </h1>
+                    <h2>
+                        My cakes are handcrafted with love
+                    </h2>
+                </div>
+               </div>
+             </div>
+         <div>
+         <h2>
+           Create your custom cake:
+       </h2>
+
+      </div>
+        <!-- תצוגת נתוני העוגה -->
+         <div class="Cake_Details">
+            <h2 id="cake_name">Cake Name</h2>
+            <img id="cake_image" src="pic/default-cake.jpg" alt="Cake Image" />
+        </div>
+       </header>
+
+    <!-- טופס עיצוב עוגה -->
+
+       <div class="DesignBlock">
+          <h2>Design Your Cake:</h2>
+          <form id="cakeDesignForm" action="#">
+
+             <div class="InputField">
+                 <h3>Cake inscription:</h3>
+                 <input id="cake_inscription" type="text" name="cake_inscription" placeholder="Enter inscription" required>
+            </div>
+
+            <div class="InputField">
+                <h3>Coating color:</h3>
+                <select id="coating_color" name="coating_color">
+                    <option value="white">White</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="rainbow">Rainbow</option>
+                </select>
+            </div>
+
+            <div class="InputField">
+                <h3>Kosher:</h3>
+                <input type="radio" id="kosher_yes" name="kosher" value="yes">
+                <label for="kosher_yes">Yes</label>
+                <input type="radio" id="kosher_no" name="kosher" value="no">
+                <label for="kosher_no">No</label>
+            </div>
+
+            <div class="InputField">
+                <h3>Allergy info:</h3>
+                <input id="allergy_info" type="text" name="allergy_info" placeholder="Enter allergy info">
+            </div>
+
+            <div class="InputField">
+                <h3>Notes:</h3>
+                <textarea id="notes" name="notes" rows="4" placeholder="Enter additional notes"></textarea>
+            </div>
+
+            <div class="InputField">
+                <h3>Quantity:</h3>
+                <input id="quantity" type="number" name="quantity" min="1" value="1" required>
+            </div>
+
+            <div class="InputField">
+                <h3>Total price:</h3>
+                <p id="total_price">$0.00</p>
+            </div>
+              <a href="./order.html">
+            <button id="purchase_button" class="orderB" type="submit">Order</button>
+                  </a>
+        </form>
+    </div>
+
+    <script src="design%20cake.js"></script>
+    <script src="birthday%20cakes%20catalog.js"></script>
+</body>
+</html>

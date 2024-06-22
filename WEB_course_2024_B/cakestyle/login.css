@@ -1,0 +1,165 @@
+/* סיגנון הגוף של הדף */
+body {
+    background-color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* סיגנון ראש העמוד */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+/* סיגנון לטקסט של "Login" מתחת לאייקון של אזור אישי */
+#profile_text {
+    position: absolute;
+    top: 50px; /* הגדרת מיקום תחת לאייקון */
+    right: 20px; /* מרווח ימין קטן מהאייקון */
+    color: #000000; /* צבע טקסט שחור */
+    font-family: 'Montserrat', sans-serif; /* גופן Montserrat */
+    font-size: 14px; /* גודל טקסט */
+    font-weight: 700;
+    /*display: none; !* מוסתר כברירת מחדל עד להתחברות *!*/
+}
+
+/* סיגנון לאייקוני הניווט (דף הבית ואזור אישי) */
+.navigation_icons {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    gap: 20px; /* רווח קטן בין האייקונים */
+}
+
+/* גובה ורוחב לתמונה של אייקוני הניווט (דף הבית ואזור אישי) */
+.navigation_icons img {
+    height: 50px;
+    width: 50px;
+}
+
+/* סיגנון למיכל של הלוגו של האתר */
+
+.Cake_Style_logo_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* סיגנון ומיקום לתמונה של הלוגו */
+
+.Cake_Style_logo_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#logo_Cake {
+
+    margin-right: 20px; /* Margin to ensure the cake image does not overlap with the text */
+}
+
+/* מיקום לטקסט של הלוגו */
+.Cake_Style_logo_Text {
+    text-align: left;
+}
+
+/* עיצוב כותרת ראשית עבור השם של בית העסק */
+.Cake_Style_logo_Text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #000000;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* יוצר צל עבור הטקסט */
+    letter-spacing: 1px;
+}
+
+/* עיצוב כותרת משנית עבור הסלוגן של בית העסק */
+.Cake_Style_logo_Text h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    margin: 0;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* יוצר צל עבור הטקסט */
+}
+
+/* סיגנון תיבת ההתחברות */
+.LogInBlock {
+
+    background-color: #ddf3f3;
+    border-radius: 55px;
+    width: 350px;
+
+    margin: 20px auto;
+    padding: 20px 40px;
+    border: 1px solid #000000;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif; /* גופן Montserrat */
+}
+
+/* סיגנון לשדות האימייל והסיסמה */
+
+.InputField {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.InputField h3 {
+
+    margin: 0;
+    padding-right: 10px;
+    font-family: 'Montserrat', sans-serif; /* גופן Montserrat */
+}
+
+.InputField input {
+
+    width: calc(100% - 100px); /* רוחב שדה הקלט */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 40px; /* מעגל קצוות תיבת הטקסט */
+    box-sizing: border-box;
+}
+
+/* סיגנון לכפתור ההתחברות */
+
+.login_button {
+
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif; /* גופן Montserrat */
+    border-radius: 26px;
+    border: 1px solid #000000;
+    padding: 14px 12px;
+    cursor: pointer;
+
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+/* סיגנון לקישור להרשמה */
+.LogInBlock h4 {
+
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif; /* גופן Montserrat */
+}
