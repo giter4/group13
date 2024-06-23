@@ -1,0 +1,295 @@
+
+/*סיגנון הגוף של הדף*/
+body {
+    background-color: #FFFFFF;
+     text-align: center;
+     margin: 0;
+     font-family: 'Open Sans', sans-serif;
+}
+
+/*סיגנון ראש העמוד*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     padding: 10px 20px;
+     position: relative;
+}
+
+
+
+/* סיגנון לטקסט של "Login" מתחת לאייקון של אזור אישי */
+
+#profile_text {
+    position: absolute;
+    top: 50px; /* הגדרת מיקום תחת לאייקון */
+
+    right: 25px; /* מרווח ימין קטן מהאייקון */
+
+     color: #000000;
+
+      font-family: 'Montserrat', sans-serif; /* גופן Montserrat */
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+
+
+/*  סיגנון לאייקוני הניווט (דף הבית ואזור אישי)*/
+
+.navigation_icons {
+    position: absolute;
+
+    top: 10px;
+     right: 20px;
+    display: flex;
+    gap: 20px; /* רווח בין האייקונים */
+}
+
+/*  גובה ורוחב לתמונה של אייקוני הניווט (דף הבית ואזור אישי)*/
+
+.navigation_icons img {
+
+     height: 50px;
+     width: 50px;
+}
+
+/*  סיגנון למיכל של הלוגו של האתר*/
+
+.Cake_Style_logo_container {
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     width: 100%;
+     margin-top: 20px;
+}
+
+/*  סיגנון ומיקום לתמונה של הלוגו*/
+
+.Cake_Style_logo_img {
+      display: flex;
+     align-items: center;
+     justify-content: center;
+      position: relative;
+}
+
+#logo_Cake {
+    margin-right: 20px; /* כדי שהתמונה לא תעלה על הטקסט */
+
+     animation: bounce 2s; animation-iteration-count: 2; /* אנימציה נמשכת 2 איטרציות */
+}
+
+/*שלבי אנימציה של קפיצה מצד לצד */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+          transform: translateY(-10px) rotate(-10deg);
+    }
+    50% {
+         transform: translateY(0) rotate(0deg);
+    }
+    75% {
+        transform: translateY(-5px) rotate(10deg);
+    }
+}
+
+/*מיקום לטקסט של הלוגו*/
+
+ .Cake_Style_logo_Text {
+     text-align: left;
+}
+
+/*עיצוב כותרת ראשית עבור השם של בית העסק*/
+
+.Cake_Style_logo_Text h1 {
+    font-family: 'Montserrat', sans-serif;
+     font-weight: 700;
+     font-size: 32px;
+    color: #000000;
+     margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* יוצר צל עבור הטקסט */
+    letter-spacing: 1px;
+}
+
+/*עיצוב כותרת משנית עבור הסלוגן של בית העסק*/
+
+.Cake_Style_logo_Text h2 {
+    font-family: 'Montserrat', sans-serif;
+     font-weight: 400;
+    font-size: 20px;
+     color: #000000;
+     margin: 0;
+     letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* יוצר צל עבור הטקסט */
+}
+/* סיגנון למיכל : what event are you celrbrating?*/
+
+.celebration_event_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-color: #ddf3f3;
+     padding: 20px;
+     margin: 20px auto; /* למרכז את המיכל */
+     max-width: 800px;
+     gap: 20px;
+}
+
+/* סיגנון לטקסט במיכל : what event are you celrbrating?*/
+
+.celebration_event_text_container {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+     font-weight: 700;
+     font-size: 42px;
+     color: #000000;
+    line-height: 1;
+}
+
+/* תצוגה לטקסט במיכל : what event are you celrbrating?*/
+
+.celebration_event_text_container span {
+    display: block;
+    margin: 0;
+}
+/* מיכל פלקס של האייקונים לאירועים יום הולדת , חתונה , מסיבת הולדת תינוק*/
+
+ .celebration_events_options {
+      display: flex;
+       justify-content: center;
+        gap: 50px;
+        margin-top: 20px;
+}
+/*מיקום של אלמנט אייקון אירוע*/
+
+  .celebration_event_option {
+     position: relative;
+     text-align: center;
+}
+
+/*עיצוב הטקסט של אייקון אירוע*/
+
+.celebration_event_label {
+    font-family: 'Montserrat', sans-serif;
+     font-weight: 400;
+      font-size: 18px;
+       color: #000000;
+       margin-top: 9px;
+}
+
+/*גודל ורוחב האיקונים של האירועים*/
+
+ .celebration_event_icon{
+     height: 100px;
+     width: 100px;
+     cursor: pointer;
+}
+
+/*כאשר הלחצן מעל אייקון תופעל אנימציה*/
+
+.celebration_event_icon:hover {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+/* סיגנון למיכל : recommended cakes*/
+
+.recommended_cakes_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-color: #ddf3f3;
+     padding: 5px;
+     margin: 20px auto; /* למרכז את המיכל */
+     max-width: 800px;
+     gap: 30px;
+}
+
+/*  recommended cakes סיגנון לטקסט במיכל : */
+.recommended_cakes_container_text {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+     font-weight: 700;
+     font-size: 25px;
+     color: #000000;
+    line-height: 1;
+    align-self: flex-start; /* ליישר את הטקסט שמאלה במיכל*/
+    margin-right: auto; /* דוחף את הטקסט שמאלה */
+}
+
+ /*תצוגה לטקסט במיכל :  recommended cakes*/
+.recommended_cakes_container_text span {
+    display: block;
+    margin: 0;
+}
+
+
+/* עיצוב למיכל עוגות מומלצות */
+.cakes_container {   /* cakes-container */
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     gap: 20px;
+     padding: 20px;
+}
+
+/* עיצוב לכל פריט עוגה */
+
+.cake_item {
+
+     display: flex;
+     align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+     width: 80%;
+     cursor: pointer; /* מראה ליוזר שהוא יכול ללחוץ על הפריט*/
+     transition: transform 0.3s;
+}
+
+/*הפריט עולה קצת למעלה כשמרחפים מעליו עם הלחצן (אידיקציה שאפשר ללחוץ)*/
+.cake_item:hover {
+
+     transform: translateY(-5px);
+}
+
+/* עיצוב תמונות העוגות */
+
+.cake_item img {
+    width: 600px;
+    height: 500px;
+     border-radius: 10px;
+     margin-right: 20px; /* רווח בין התמונה לטקסט */
+}
+
+/* עיצוב פרטי העוגה */
+
+.cake_details {
+    text-align: left;
+    flex: 1;
+}
+
+/*עיצוב טקסט מאפייני העוגה*/
+
+.cake_details h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #000000;
+    margin: 10px 0 5px;
+}
+
+/*עיצוב טקסט עבור המחיר והדירוג*/
+
+.cake_details p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+     font-size: 20px;
+     color: #000000;
+     margin: 5px 0;
+}
+
+

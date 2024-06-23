@@ -1,0 +1,158 @@
+  body {
+      background-color: #ffffff;
+      text-align: center;
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+}
+
+  header {
+
+      display: flex;
+       flex-direction: column;
+      align-items: center;
+      padding: 10px 20px;
+       position: relative;
+ }
+
+/*  login*/
+#profile_text {
+
+    position: absolute;
+    top: 50px;
+
+    right: 15px;
+    color: #000000;
+     font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+
+  }
+
+
+/*אייקונים שם משתמש וסיסמא*/
+.navigation_icons {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+ .navigation_icons img {
+     height: 50px;
+
+      width: 50px;
+
+}
+
+ .Cake_Style_logo_container {
+
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     width: 100%;
+     margin-top: 20px;
+
+}
+
+ .Cake_Style_logo_img {
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+
+}
+
+ #logo_Cake {
+     margin-right: 20px;
+}
+
+ .Cake_Style_logo_Text {
+      text-align: left;
+}
+
+ .Cake_Style_logo_Text h1 {
+     font-weight: 700;
+     font-size: 32px;
+     color: #000000;
+     margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+}
+
+ .Cake_Style_logo_Text h2 {
+     font-weight: 400;
+     font-size: 20px;
+     color: #000000;
+    margin: 0;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+ /*מיכל פרטי תשלום*/
+ .pay_block {
+    background-color: #ddf3f3;
+    border-radius: 55px;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 40px;
+    border: 1px solid #000000;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pay_Button {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 26px;
+    border: 3px solid #ffffff;
+    padding: 14px 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+}
+
+.InputField {
+    display: flex;
+    align-items: initial;
+    flex-direction: row;
+    padding-bottom: 30px;
+    font-size: 12px;
+}
+
+.InputField input {
+
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+     border: 1px solid #cccccc;
+     box-sizing: border-box;
+
+}
+
+.InputSmallField {
+
+     display: flex;
+     align-items: normal;
+    flex-direction: row;
+    font-size: 12px;
+
+}
+
+.InputSmallField input {
+
+    width: 48%;
+    padding: 10px;
+    margin-top: 5px;
+     margin-bottom: 15px;
+     border: 1px solid #cccccc;
+     box-sizing: border-box;
+
+}

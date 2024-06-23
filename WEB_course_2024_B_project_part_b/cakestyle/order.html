@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="order.css">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+ </head>
+
+ <body>
+     <header>
+        <!-- אייקונים וטקסט להתחברות -->
+         <div class="navigation_icons">
+            <a href="./homepage.html">
+                <img src="pic/home page.png" alt="home page" />
+            </a>
+            <a id="profile-link" href="./user%20profile.html">
+                <img src="pic/personal account.png" alt="personal account" />
+
+            </a>
+
+
+              <a id="login_link" href="./login.html">
+
+          <!--            טקסט LOGIN מתחת לאייקון אזור אישי-->
+                   <span id="profile_text">Login</span>
+               </a>
+
+         </div>
+
+        <!-- לוגו -->
+         <div class="Cake_Style_logo_container">
+             <div class="Cake_Style_logo_img">
+                 <img id="logo_Cake" src="pic/cake icon.png" height="50" />
+                 <div class="Cake_Style_logo_Text">
+                    <h1>
+                          CakeStyle
+                    </h1>
+                    <h2>
+                        My cakes are handcrafted with love
+                    </h2>
+                 </div>
+              </div>
+            </div>
+    </header>
+
+
+        <div class="DesignBlock">
+        <h2>Your Order</h2>
+
+           <form id="orderForm" action="./payment.html">
+            <div class="InputField">
+                <h3>Name:</h3>
+                <input id="name" type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="InputField">
+                <h3>Phone:</h3>
+                <input id="phone" type="tel" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="InputField">
+                <h3>Email:</h3>
+                <input id="email" type="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="InputField">
+                <h3>Receive Type:</h3>
+                <select id="receive_type" name="receive_type" required>
+                    <option value="pickup">Pickup</option>
+                    <option value="delivery">Delivery</option>
+                </select>
+            </div>
+            <div class="InputField" id="delivery_address_field">
+                <h3>Delivery Address:</h3>
+                <input id="delivery_address" type="text" name="delivery_address" placeholder="Enter delivery address">
+            </div>
+            <div class="InputField" id="delivery_date_field">
+                <h3>Choose Delivery Date:</h3>
+                <input id="delivery_date" type="date" name="delivery_date" required>
+            </div>
+            <button id="payment_button" class="payment_button" type="submit">Pay</button>
+        </form>
+
+        </div>
+
+
+
+    <script src="order.js"></script>
+</body>
+</html>
